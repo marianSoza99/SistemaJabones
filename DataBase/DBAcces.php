@@ -11,12 +11,27 @@
             return $conn;
         }
 
-        public static function agregarUsuario(){
+        public static function agregarUsuario($name,$apellido,$usuario,$password){
             try{
                 $conn=self::connect();
                 $sql="";
+                return true;
             }catch(PDOException $e){
                 echo $sql . "<br>" . $e->getMessage();
+                return false;
+            }finally{
+                $conn=null;
+            }
+        }
+
+        public static function checkUser($user,$pass){
+            try{
+                $conn=self::connect();
+                $sql="";
+                return 0;
+            }catch(PDOException $e){
+                echo $sql . "<br>" . $e->getMessage();
+                return -1;
             }finally{
                 $conn=null;
             }
