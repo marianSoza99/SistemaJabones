@@ -1,0 +1,15 @@
+.brand{
+    background: hsl(14, 70%, 75%) !important;
+}
+.brand-text{
+    color: #cbb09c !important;
+    font-family:"helvética";
+}
+form{
+    max-width:460px;
+     margin: 20px auto;
+     padding: 20px;
+}
+.brand-register{
+    background: #E9967A  !important;
+}
