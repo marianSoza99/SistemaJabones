@@ -1,7 +1,5 @@
 <?php
 	session_start();
-	include('templates/header.php');
-	include('templates/fooder.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,6 +9,10 @@
 		<link rel="stylesheet" href="style/stylesheet.css">
     </head>
     <body>
+        <?php
+            include('header.php');
+            include('fooder.php');
+        ?>
         <div class="container">
             <h3 class="red-text text-accent-1 center">Registro</h3>
             <div class="row">

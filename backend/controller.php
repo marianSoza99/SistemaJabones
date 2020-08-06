@@ -12,7 +12,7 @@
             $password=$_POST["pass"];
             $success=DBAcces::agregarUsuario($name,$apellido,$user,$password);
             if($success){
-                $url="/SistemaJabones/home.php";
+                $url="/SistemaJabones/index.php";
             }else{
                 $url="/SistemaJabones/Singin.php";
             }
@@ -22,14 +22,17 @@
             $user=$_POST["usuario"];
             $password=$_POST["pass"];
             $success=DBAcces::checkUser($user,$password);
-            if($success>=0){
+            if($success){
                 $_SESSION["usuario"]=$user;
-                $_SESSION["contra"]=$password;
                 $url="/SistemaJabones/home.php";
             }else{
                 $url="/SistemaJabones/index.php";
             }
             
+            break;
+        case "logout":
+            session_unset();
+            $url="/SistemaJabones/index.php";
             break;
         
     }

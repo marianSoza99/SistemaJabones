@@ -13,3 +13,37 @@ form{
 .brand-register{
     background: #E9967A  !important;
 }
+.brand-register-text{
+    color: #eb9274 ;
+}
+.border-right{
+    border-right-style: outset;
+    border-width: 1.5px;
+}
+.border-top{
+    border-top-style: inset ;
+    border-width: 1.5px;
+}
+.mt-s{
+    margin-top: 5%;
+}
+.ml-s{
+    margin-left: 5%;
+}
+.full{
+    height: 90vh;
+}
+.ul{
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+.lista{
+    min-height: 100px;
+    max-height: 100px;
+    overflow-y: scroll;
+}
